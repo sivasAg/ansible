@@ -12,7 +12,7 @@ setup(
     install_requires=install_requires,
     package_dir={'': 'lib',
                  'ansible_test': 'test/lib/ansible_test'},
-    packages=find_packages('lib') + find_packages('test/lib'),
+    packages=find_packages('lib') + find_packages('test/lib/config'),
     entry_points={
         'console_scripts': [
             'ansible=ansible.cli.adhoc:main',
